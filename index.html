@@ -45,6 +45,39 @@
             opacity: 1;
           }
         }
+        
+        .slideInLeft {
+          -webkit-animation-name: slideInLeft;
+          animation-name: slideInLeft;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+          -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+        }
+
+        @-webkit-keyframes slideInLeft {
+          0% {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+            visibility: visible;
+          }
+          100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+          }
+        }
+
+        @keyframes slideInLeft {
+          0% {
+            -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+            visibility: visible;
+          }
+          100% {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+          }
+        }
     </style>
     <body id="page-top">
         <!-- Navigation-->
@@ -71,9 +104,9 @@
             <section class="resume-section" id="accueil">
                 <div class="resume-section-content">
                     <div class="fadeIn">
-                    <h1 class="mb-0">
+                    <h1 class="mb-0 slideInLeft">
                         Ishac
-                        <span class="text-danger">REY</span>
+                        <span class="text-danger slideInLeft">REY</span>
                         
                     </h1>
                     <div class="subheading mb-5">
