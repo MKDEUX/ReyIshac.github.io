@@ -19,6 +19,29 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <style>
+        .typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+        
         .fadeIn {
           -webkit-animation-name: fadeIn;
           animation-name: fadeIn;
@@ -115,7 +138,7 @@
                     </div>
                     <p class="lead mb-5">je m'appelle Ishac REY , j'ai 20 ans et je suis étudiant au Lycée les Chassagnes à Oullins.</p>
                        
-                        <p class= "subheading text-dark mb-5">Je suis développeur front end et back end Junior</p>
+                        <p class= "subheading text-dark mb-5 typewriter h1">Je suis développeur front end et back end Junior</p>
                  
                         
                       
